@@ -23,15 +23,15 @@ security:
     client:
       client-id: 'test_client_id_1'
       client-secret: 'test_client_secret_1'
-      access-token-uri: 'http://sso.cdk8s.com:9090/sso/oauth/token'
-      user-authorization-uri: 'http://sso.cdk8s.com:9090/sso/oauth/authorize'
+      access-token-uri: 'http://sso.cdk8s.com:9091/sso/oauth/token'
+      user-authorization-uri: 'http://sso.cdk8s.com:9091/sso/oauth/authorize'
     resource:
-      user-info-uri: 'http://sso.cdk8s.com:9090/sso/oauth/userinfo'
+      user-info-uri: 'http://sso.cdk8s.com:9091/sso/oauth/userinfo'
 
 #=================================================================================
 
 custom:
   variable:
-    server-logout-url: 'http://sso.cdk8s.com:9090/sso/oauth/logout'
+    server-logout-url: 'http://sso.cdk8s.com:9091/sso/oauth/logout'
     server-logout-redirect-url: 'http://test1.cdk8s.com:${server.port}${server.context-path}/logoutSuccess'
 
